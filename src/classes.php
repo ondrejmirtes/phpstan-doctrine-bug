@@ -9,6 +9,16 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class MyEntity
 {
+
+	/**
+	 * @ORM\Id()
+	 * @ORM\GeneratedValue()
+	 * @ORM\Column(type="integer")
+	 *
+	 * @var int
+	 */
+	private $id;
+
     /**
      * @ORM\Column(type="string", unique=true)
      */
@@ -21,7 +31,7 @@ class Foo
     {
         /** @var \Doctrine\ORM\EntityManagerInterface */
         $em = '';
-        $em->getRepository(MyEntity::class)->findOneByUsername('foo');
+        $username = $em->getRepository(MyEntity::class)->findOneByUsername('foo');
         $em->getRepository(MyEntity::class)->findOneByXyz();
     }
 }

@@ -7,6 +7,6 @@ parameters:
     tmpDir: tmp/
     paths:
         - src/
-#    doctrine:
+    doctrine:
 #        repositoryClass: Col\ORM\AbstractEntityRepository
-#        objectManagerLoader: app/phpstan_objectmanager.php
+        objectManagerLoader: entity-manager.php
