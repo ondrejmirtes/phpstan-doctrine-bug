@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "classmap": ["src/classes.php"]
+    },
+    "require": {
+        "phpstan/phpstan": "^0.12.5",
+        "phpstan/phpstan-doctrine": "^0.12.9",
+        "doctrine/orm": "^2.7"
+    }
+}

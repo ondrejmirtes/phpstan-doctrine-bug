@@ -1,0 +1,12 @@
+includes:
+    - phar://phpstan.phar/conf/config.level5.neon
+    - vendor/phpstan/phpstan-doctrine/extension.neon
+
+parameters:
+    tipsOfTheDay: false
+    tmpDir: tmp/
+    paths:
+        - src/
+#    doctrine:
+#        repositoryClass: Col\ORM\AbstractEntityRepository
+#        objectManagerLoader: app/phpstan_objectmanager.php
